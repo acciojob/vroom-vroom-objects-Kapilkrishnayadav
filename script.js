@@ -9,7 +9,7 @@ class  Car{
 		}
 }
 
-class SportsCar {
+class SportsCar extends Car {
 	constructor(make,model,topSpeed) {
 		super(make,model);
 		this.topSpeed=topSpeed;
