@@ -1,26 +1,23 @@
-// Base Car class
-class Car {
-  constructor(make, model) {
-    this.make = make;
-    this.model = model;
-  }
-
-  getMakeModel() {
-    return `${this.make} ${this.model}`;
-  }
+class  Car{
+	constructor(make, model) {
+		this.make=make;
+		this.model=model;
+	}
+		getMakeModel()
+		{
+			return `${this.make} ${this.model}`
+		}
 }
 
-// SportsCar class inheriting from Car
-class SportsCar extends Car {
-  constructor(make, model, topSpeed) {
-    // Call the parent class constructor
-    super(make, model);
-    this.topSpeed = topSpeed;
-  }
-
-  getTopSpeed() {
-    return this.topSpeed;
-  }
+class SportsCar {
+	constructor(make,model,topSpeed) {
+		super(make,model);
+		this.topSpeed=topSpeed;
+	}
+	getTopSpeed()
+	{
+		return this.topSpeed;
+	}
 }
 
 // Example Usage:
